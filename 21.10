@@ -114,3 +114,10 @@ namespace Abstrakcja
         }
 	}
 }
+
+Tworzenie listy zwierząt:
+utwórz liste animals typu List<Ianimal>, która zawiera obiekty pies i kot z odpowiednimi nazwami i wiekiem.
+
+iteracja przez liste zwierząt:
+Użyj pętli foreach, aby iterować przez luste animals
+Dla każdego obiektu w liście wywołaj metody makesound i eat
