@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Abstrakcja
+{
+	internal class Program
+	{
+		public interface IAnimal
+		{
+			void MakeSound();
+		}
+		public class Dog : IAnimal
+		{
+			public void MakeSound()
+			{
+                Console.WriteLine("Hau, Hau, Hau");
+            }
+		}
+		public class Cat : IAnimal
+		{
+			public void MakeSound()
+			{
+                Console.WriteLine("Miau, Miau, Miau");
+            }
+		}
+
+		static void Main(string[] args)
+		{
+            Dog dog = new Dog();
+			Cat cat = new Cat();
+            Console.ReadKey();
+			Console.WriteLine();
+			dog.MakeSound();
+			cat.MakeSound();
+            Console.WriteLine();
+
+        }
+	}
+}
